@@ -1,6 +1,6 @@
 import Quiz from './components/Quiz'
-import QuizQuestions from './assets/data'
-import FinishQuotes from './assets/finishData'
+import QuizQuestions from '../public/assets/data'
+import FinishQuotes from '../public/assets/finishData'
 
 function App() {
 

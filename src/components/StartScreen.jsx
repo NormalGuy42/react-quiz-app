@@ -5,7 +5,7 @@ const StartScreen = ({start,setStart})=>{
     return(
         <div className="start-container">
             <h1>Bienvenue</h1>
-            <img src="src/assets/flag.webp" alt="" />
+            <img src="public/assets/flag.webp" alt="" />
             <p>Le but du jeu est de deviner la nationalité de personnes juste avec l'image présentée. Bonne chance!</p>
             <button onClick={()=>gameStart()}>Commencer</button>
         </div>
