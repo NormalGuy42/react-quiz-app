@@ -65,7 +65,7 @@ const Quiz = ({questions, finishData})=>{
                         <span className="current-question-number">{currentQuestion + 1}</span>
                         <span className="total-question-number">/{questions.length}</span>
                     </div>
-                    <img src={"public/"+img} alt="" />
+                    <img src={"/"+img} alt="" />
                     <ul className="quiz-list">
                         {
                             choices.map((answer, index)=>(
