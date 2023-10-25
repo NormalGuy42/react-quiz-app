@@ -37,6 +37,7 @@ header{
   display: block;
   margin: 0 auto;
   border-radius: 8px;
+  cursor: pointer;
 }
 .quiz-container{
   height: 80vh;
@@ -59,6 +60,7 @@ header{
   height: 50vh;
   width: 100%;
   object-fit: cover;
+  object-position: top;
 }
 .quiz-list{
   padding-top: 20px;

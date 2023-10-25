@@ -1,7 +1,11 @@
-const FinishScreen = ({score,resetScore,scoreLevel,finishData,restart,setRestart})=>{
+import createQuizQuestions from "../../public/assets/data";
+
+const FinishScreen = ({score,resetScore,scoreLevel,finishData,restartQuestions,restart,setRestart})=>{
     const restartQuiz = ()=>{
         setRestart(null);
         resetScore(0);
+        restartQuestions(createQuizQuestions())
+    
     }
     return(
         <div className="results">

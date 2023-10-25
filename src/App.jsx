@@ -1,11 +1,12 @@
 import Quiz from './components/Quiz'
-import QuizQuestions from '../public/assets/data'
+import createQuizQuestions from '../public/assets/data'
 import FinishQuotes from '../public/assets/finishData'
+import { useState } from 'react'
 
 function App() {
-
+  const [quizQuestions,setQuizQuestions] = useState(createQuizQuestions())
   return (
-      <Quiz questions={QuizQuestions} finishData={FinishQuotes}/>
+      <Quiz questions={quizQuestions} resetQuestions={setQuizQuestions} finishData={FinishQuotes}/>
   )
 }
 

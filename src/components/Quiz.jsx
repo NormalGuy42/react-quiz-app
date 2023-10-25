@@ -2,7 +2,7 @@ import { useState } from "react";
 import FinishScreen from "./FinishScreen";
 import StartScreen from "./StartScreen";
 
-const Quiz = ({questions, finishData})=>{
+const Quiz = ({questions, resetQuestions,finishData})=>{
     const [showStart,setShowStart] = useState(true);
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [selectedIndex, setSelectedIndex] = useState(null);
@@ -84,7 +84,7 @@ const Quiz = ({questions, finishData})=>{
             </>
                 : 
             <> 
-                <FinishScreen score={score} resetScore={setScore} scoreLevel={scoreLevel} finishData={finishData} restart={endQuiz} setRestart={setEndQuiz}/>
+                <FinishScreen score={score} resetScore={setScore} scoreLevel={scoreLevel} finishData={finishData} restart={endQuiz} setRestart={setEndQuiz} restartQuestions={resetQuestions}/>
             </>}
         </div>
         </>
